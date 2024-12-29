@@ -1,0 +1,75 @@
+<style>
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Job listing container */
+.job-listing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.job-listing:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Job title styling */
+.job-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Job details styling */
+.job-detail {
+    color: #666;
+    margin: 4px 0;
+    font-size: 0.95em;
+}
+
+/* Apply button container */
+.apply-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Apply button styling */
+.apply-button {
+    padding: 10px 20px;
+    font-size: 0.95em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+</style>
+
+<div class="row job-listing">
+    <div class="col-9">
+        <h4 class="job-title">{{job['Title']}}</h4>
+        <p class="job-detail"><b>Location:</b> {{job['Location']}}</p>
+        <p class="job-detail"><b>Salary:</b> {{job['Salary']}}</p>
+    </div>
+    <div class="col-3 apply-container">
+        <button class="apply-button">Apply</button>
+    </div>
+</div>

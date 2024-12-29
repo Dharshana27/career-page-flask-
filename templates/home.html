@@ -20,12 +20,13 @@
     <h2 class="text-center">About Jovian</h2>
     <p class="lead">
     Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla amet dui ut morbi habitant potenti suscipit mi. Mattis augue eros per risus dictum duis. Fames tincidunt fusce tempor nibh facilisi nisl; praesent curabitur ridiculus. Himenaeos quis metus diam porta consectetur penatibus. Vulputate commodo nisi varius congue venenatis vestibulum libero. Etiam taciti montes bibendum quis tellus senectus facilisis pellentesque.</p>
-    <h2 class="text-center  mt-4">Open Positions</h2>
-      <div>
+    <h2 class="text-center  mt-4" >Open Positions</h2>
+      <div class="mt-4 ml-4">
+        
         {% for job in jobs %}
-          <h4>Title:{{jobs['Title']}}</h4>
-        <p><b>Location:</b>{{jobs['Location']</p>
+          {%include 'jobitem.html'%}
         {%endfor%}
+      
       </div>
     <p class="text-center">Jobs-To-DO<p>
     <div class= "text-center mt-4">
